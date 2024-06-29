@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrn.imd.lp2.projeto03.controller.loginController">
+   <children>
+      <VBox alignment="CENTER" minWidth="300.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" minWidth="300.0" prefWidth="300.0" spacing="10.0" style="-fx-background-color: #2096F3;" HBox.hgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="75.0" fitWidth="75.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/user.png" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label contentDisplay="CENTER" style="-fx-font-weight: bold;" text="Usuário" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TextField fx:id="tfUsuario" onAction="#btLoginOnAction" prefWidth="300.0" style="-fx-background-color: fff;" />
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label contentDisplay="CENTER" style="-fx-font-weight: bold;" text="Senha" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <PasswordField fx:id="pfSenha" onAction="#btLoginOnAction" />
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" spacing="20.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="btSerializar" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#btSerializarOnAction" style="-fx-background-color: D1FFBD; -fx-font-weight: bold;" text="Serializar Dados" textFill="#2096f3" visible="false">
+                           <padding>
+                              <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btLogin" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#btLoginOnAction" style="-fx-background-color: fff; -fx-font-weight: bold;" text="Login" textFill="#2096f3">
+                           <padding>
+                              <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                           </padding>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" fillHeight="false">
+               <children>
+                  <Label fx:id="loginMsgSucesso" alignment="CENTER" style="-fx-background-color: D1FFBD; -fx-background-radius: 2;" visible="false" />
+                  <Label fx:id="loginMsgErro" alignment="CENTER" style="-fx-background-color: FFC8C9; -fx-background-radius: 2;" visible="false" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>

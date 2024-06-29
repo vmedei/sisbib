@@ -1,0 +1,8 @@
+Bibliotecario,Bibliotecario1,123456789,BIB001,1980-01-01,0,admin,admin
+Estudante,Estudante1,987654321,EST001,2000-01-01,2,Computação
+Estudante,Estudante2,876543210,EST002,2000-01-02,3,Engenharia
+Professor,Professor1,765432109,PROF001,1970-01-01,0,Matemática
+Livro,Livro1,Autor1,Assunto1,2000,BOM,10,202401
+Livro,Livro2,Autor2,Assunto2,2001,NOVO,5,202402
+Livro,Livro3,Autor3,Assunto3,2002,RUIM,3,202403
+Livro,Livro4,Autor4,Assunto4,2003,NOVO,1,202404
